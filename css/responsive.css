@@ -1,0 +1,101 @@
+/*media query*/
+@media (max-width: 991px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	header
+	{
+		padding: 1rem 2rem;
+	}
+	header .logo img
+	{
+		height: 7rem;
+	}
+	.our-menu .menu-container
+	{
+		grid-template-columns: repeat(auto-fit,minmax(30rem,2fr));
+	}
+	.our-menu .menu-container .item .item-menu span 
+	{
+		width: 15%;
+	}
+
+}
+@media (max-width: 768px)
+{
+	/*navbar media query*/
+	header .logo img
+	{
+		height: 7rem;
+	}
+	header .icons #menu
+	{
+		display: inline-block;
+	}
+	header .navbar
+	{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #eee;
+		border-top: .1rem solid rgba(205,170,124,0.2);
+		border-bottom: .1rem solid rgba(205,170,124,0.2);
+		padding: 1rem;
+		clip-path: polygon(0 0,100% 0,100% 0,0 0);
+	}
+	header .navbar.active
+	{
+		clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	}
+	header .navbar a 
+	{
+		display: block;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		background: var(--black);
+	}
+
+	
+
+	/*slider media query*/
+	.home .home-slider .slide
+	{
+		justify-content: center;
+		height: 80vh;
+	}
+	.home .home-slider .slide .content
+	{
+		padding: 0;
+	}
+	.home .home-slider .slide .content h1
+	{
+		font-size: 7rem;
+	}
+
+	/*welcome section*/
+
+	.welcome .box-container
+	{
+		flex-wrap: wrap;
+	}
+	.welcome .box-container .box 
+	{
+		width: 100%;
+	}
+	.reservation .image
+	{
+		width: 0;
+	}
+	.reservation .form
+	{
+		width: 100%;
+	}
+	.reservation .form .form-holder
+	{
+		display: block;
+	}
+}
